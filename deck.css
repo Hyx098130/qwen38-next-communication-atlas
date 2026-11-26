@@ -1,0 +1,44 @@
+*{box-sizing:border-box}
+:root{font-family:"Microsoft YaHei","PingFang SC","Segoe UI",sans-serif;color:#132d42;background:#f8fafc;--blue:#075a87;--line:#c8d9e4;--muted:#486272;--pad:clamp(20px,5vw,84px)}
+body{margin:0;min-width:300px}
+a,button{font:inherit}a{color:var(--blue);text-underline-offset:.2em}button,.primary,.branch,.quiet,.topbtn{cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #d88618;outline-offset:3px}button:disabled{opacity:.4;cursor:default}
+.top,.bottom{background:#fff;position:sticky;left:0;width:100%;z-index:3}.top{top:0;border-bottom:1px solid var(--line)}
+.topwrap,.controls{max-width:1500px;margin:auto;display:flex;align-items:center;padding:0 var(--pad);gap:16px}
+.topwrap{height:65px}.brand{font:700 clamp(17px,1.55vw,24px)/1.2 "Segoe UI",sans-serif;letter-spacing:-.05em;text-decoration:none;color:#12324c;white-space:nowrap}
+nav{display:flex;align-self:stretch;align-items:stretch;gap:clamp(10px,2vw,33px);margin:0 auto}
+nav a{display:flex;align-items:center;font-size:15px;text-decoration:none;color:#4b6575;border-bottom:3px solid transparent;padding:3px 3px 0}
+nav a[aria-current]{color:#055780;border-bottom-color:#1176a4;font-weight:700}
+.topbtn,.quiet,.switch button,#close-toc{background:#fff;color:var(--blue);border:1px solid #b7ccd9;border-radius:7px;padding:7px 12px;line-height:1.4;font-size:14px}
+.slide[hidden]{display:none!important}.slide{min-height:calc(100svh - 123px);display:flex;align-items:center}.slide-inner{max-width:1440px;width:100%;margin:0 auto;padding:clamp(23px,4vh,52px) var(--pad) clamp(26px,4vh,52px)}
+.heading{max-width:1130px}.chapter,.meta,.note{font-size:14px;line-height:1.55;color:var(--muted)}.chapter{color:var(--blue);font-weight:700;margin:0 0 10px}
+h1,h2,h3,p{margin:0}h1,h2,h3{color:#122c42;line-height:1.23}
+h1{font-size:clamp(34px,4.2vw,68px);letter-spacing:-.045em}
+h2{font-size:clamp(30px,3.1vw,52px);letter-spacing:-.04em}
+h3{font-size:clamp(17px,1.55vw,23px);margin:0 0 10px}
+.lead{font-size:clamp(16px,1.46vw,22px);line-height:1.65;margin:14px 0 0;color:#435c6c;max-width:58em}
+.columns{display:grid;grid-template-columns:minmax(240px,.91fr) minmax(390px,1.16fr);gap:clamp(22px,4vw,75px);margin-top:clamp(20px,4.5vh,54px);align-items:center}
+.columns.wide{grid-template-columns:minmax(220px,.68fr) minmax(420px,1.48fr)}
+.copy p,.plate p:not(.note){font-size:clamp(16px,1.25vw,20px);line-height:1.72;margin-bottom:13px}
+.copy>h3:not(:first-child){margin-top:19px}.copy .meta{font-size:14px;margin:22px 0 0}.cover .copy>p:first-child{font-size:clamp(17px,1.42vw,22px)}
+.plate{background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(15px,2vw,32px);box-shadow:0 8px 30px #1a405907}.plate .note{margin:16px 0 0;border-top:1px solid #e2ebf0;padding-top:13px}
+.layergrid{display:grid;grid-template-columns:repeat(12,1fr);gap:5px;margin-top:16px}.layerkey{text-align:center;text-decoration:none;font:600 clamp(13px,1.12vw,18px)/2 "Segoe UI",sans-serif;border:1px solid #b8cfdc;border-radius:4px;color:#215876;background:#edf5f9}
+.layerkey.qsa{background:#e9e5f5;color:#563e7f;border-color:#c9bddf}.layerkey.ple{background:#fff1cf;color:#6f4e0a;border-color:#ead492}.layerkey:hover{box-shadow:inset 0 0 0 2px currentColor}
+.legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font-size:14px;color:var(--muted)}.legend span:before{content:"";width:10px;height:10px;display:inline-block;border-radius:2px;background:#b4cfdf;margin-right:5px}.legend .ple:before{background:#f0ce7c}.legend .qsa:before{background:#c5b4dd}
+.actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:20px}.primary,.branch,.quiet{display:inline-block;text-decoration:none;font-size:15px;line-height:1.5;padding:8px 15px;border-radius:7px;font-weight:650}
+.primary{background:#075c87;color:white}.branch{background:#e6f2f8;color:#064f79;border:1px solid #b1d3e4}.quiet{font-weight:500}
+.primary:hover{background:#053f5f}.branch:hover,.topbtn:hover,.switch button:enabled:hover,.quiet:hover{background:#dbeef7}
+.flow{margin:12px 0 0;padding:0 0 0 20px;list-style:none}.flow li{position:relative;padding:0 0 15px 16px;border-left:2px solid #bfd7e4}.flow li:last-child{border-color:transparent;padding-bottom:0}
+.flow li:before{position:absolute;content:"";background:#147399;border:3px solid white;box-shadow:0 0 0 1px #86b3c9;left:-7px;top:5px;width:6px;height:6px;border-radius:50%}.flow b,.flow span{display:block}.flow b{font-size:17px}.flow span,.dirlink span{font-size:15px;line-height:1.6;color:var(--muted)}
+.operation+.operation{border-top:1px solid var(--line);padding-top:13px;margin-top:13px}.operation b{color:var(--blue)}.plate .operation p{margin:6px 0}.pairs{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.pairs div{border:1px solid var(--line);background:#fff;border-radius:6px;text-align:center;padding:7px 0}.pairs small,.pairs b{display:block}.pairs small{color:var(--muted);font-size:14px}
+.tablescroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:16px;line-height:1.48}td,th{padding:9px 6px;border-bottom:1px solid #dce6ec;text-align:left}th{font-size:14px;color:var(--muted)}td:last-child,th:last-child{text-align:right}
+.big{margin-bottom:13px}.big strong{font:700 clamp(38px,4.7vw,75px)/1.05 "Segoe UI",sans-serif;color:#065e88;letter-spacing:-.055em}.big span{display:block;font-size:15px;margin-top:7px;color:var(--muted)}.timeline{width:100%;display:block;margin:8px auto}
+.barlist>div{display:grid;grid-template-columns:1fr auto;gap:5px;margin-top:14px}.barlist label{font-size:16px}.barlist b{font-size:16px}.barlist i{display:block;grid-column:1/-1;height:9px;border-radius:4px;background:linear-gradient(90deg,#16789e var(--w),#e8eff3 var(--w))}
+.directory{border-top:1px solid var(--line)}.dirlink{display:block;padding:9px 4px;text-decoration:none;border-bottom:1px solid var(--line)}.dirlink:hover{background:#eaf3f7}.dirlink b,.dirlink span{display:block}
+.bottom{bottom:0;border-top:1px solid var(--line)}.progress{position:absolute;top:-2px;height:3px;background:#0876a5;transition:width .15s}.controls{height:58px;justify-content:space-between;color:var(--muted);font-size:14px}.switch{display:flex;gap:15px;align-items:center}.switch output{font:600 15px/1.4 "Segoe UI",sans-serif;color:#25465c}.switch button{min-width:68px}
+dialog{max-width:min(92vw,620px);width:580px;max-height:84svh;overflow:auto;border:1px solid #a9c1ce;border-radius:12px;padding:22px;color:#173247;box-shadow:0 15px 70px #0a28302b}dialog::backdrop{background:#102b4099}.toc-head{display:flex;align-items:center;justify-content:space-between}.toc-head h2{font-size:24px}dialog ol{list-style:none;margin:15px 0 0;padding:0}dialog li a{display:flex;gap:14px;text-decoration:none;border-top:1px solid var(--line);padding:7px 4px;font-size:15px}dialog li a:hover{background:#e9f3f8}dialog li span{font:600 13px/1.8 monospace;color:#648091}
+@media(min-width:1400px){.slide-inner{padding-left:80px;padding-right:80px}}
+@media(max-width:860px){.columns,.columns.wide{grid-template-columns:1fr 1.15fr;gap:16px}.layergrid{grid-template-columns:repeat(8,1fr)}.topwrap{gap:10px}.plate{padding:15px}nav{gap:8px}nav a{font-size:14px}.slide-inner{padding:22px}}
+@media(max-width:680px){.topwrap{height:auto;min-height:52px;gap:8px;padding:6px 15px}.topwrap nav{display:none}.brand{margin-right:auto}.slide-inner{padding:23px 16px}.slide{align-items:flex-start;min-height:calc(100svh - 106px)}.columns,.columns.wide{grid-template-columns:1fr;gap:16px;margin-top:20px}.cover .layergrid{grid-template-columns:repeat(8,1fr)}.controls{height:54px;padding:0 13px;gap:6px}.switch{gap:8px}.switch button{min-width:54px}.chapter{margin-bottom:6px}.heading .lead{margin-top:9px}.actions{margin-top:12px}.copy .meta{margin-top:10px}.plate h3{font-size:17px}.columns>div{min-width:0}.big strong{font-size:46px}.barlist{margin-bottom:8px}.controls #caption{font-size:13px}}
+@media(max-height:710px) and (min-width:861px){.topwrap{height:48px}.controls{height:44px}.slide{min-height:calc(100svh - 92px)}.slide-inner{padding-top:18px;padding-bottom:18px}.columns{margin-top:16px}.lead{margin-top:8px}.flow li{padding-bottom:9px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
