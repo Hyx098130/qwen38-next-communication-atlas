@@ -41,4 +41,6 @@ dialog{max-width:min(92vw,620px);width:580px;max-height:84svh;overflow:auto;bord
 @media(max-width:680px){.topwrap{height:auto;min-height:52px;gap:8px;padding:6px 15px}.topwrap nav{display:none}.brand{margin-right:auto}.slide-inner{padding:23px 16px}.slide{align-items:flex-start;min-height:calc(100svh - 106px)}.columns,.columns.wide{grid-template-columns:1fr;gap:16px;margin-top:20px}.cover .layergrid{grid-template-columns:repeat(8,1fr)}.controls{height:54px;padding:0 13px;gap:6px}.switch{gap:8px}.switch button{min-width:54px}.chapter{margin-bottom:6px}.heading .lead{margin-top:9px}.actions{margin-top:12px}.copy .meta{margin-top:10px}.plate h3{font-size:17px}.columns>div{min-width:0}.big strong{font-size:46px}.barlist{margin-bottom:8px}.controls #caption{font-size:13px}}
 @media(max-height:710px) and (min-width:861px){.topwrap{height:48px}.controls{height:44px}.slide{min-height:calc(100svh - 92px)}.slide-inner{padding-top:18px;padding-bottom:18px}.columns{margin-top:16px}.lead{margin-top:8px}.flow li{padding-bottom:9px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+.heading [tabindex="-1"]:focus{outline:none}
+@media(min-width:861px) and (max-height:800px){.columns.wide .timeline{max-height:32vh;object-fit:contain}}
 
